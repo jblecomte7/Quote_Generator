@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Satisfy";
+    src: url(./fonts/Satisfy-Regular.ttf) format("truetype");
+}
+
+
+html,
+body {
+	background: #5c258d;
+	background: -webkit-linear-gradient(to right, #4389a2, #5c258d);
+	background: linear-gradient(to right, #4389a2, #5c258d);
+	height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#citation {
+	font-size: 2em;
+	font-family: "Satisfy", curve;
+	line-height: 1.3em;
+	letter-spacing: 1px;
+    padding: 25px;
+}
+
+#citation:before {
+	content: open-quote;
+}
+
+#citation:after {
+	content: close-quote;
+}
+
+#auteur {
+	font-size: 1.5em;
+	font-style: italic;
+    padding-left: 25px;
+}
+
+#nouveau {
+	background: #ff9966;
+	background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+	background: linear-gradient(to right, #ff5e62, #ff9966);
+	cursor: pointer;
+    justify-self: flex-end;
+    height: 30%;
+    font-size: 1.5em;
+    color: #fff;
+    border: none;
+    padding: 15px 0;
+}
+
+.container {
+    background-color: #fff;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
