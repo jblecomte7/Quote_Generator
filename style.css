@@ -22,6 +22,7 @@ body {
 	line-height: 1.3em;
 	letter-spacing: 1px;
     padding: 25px;
+    text-align: center;
 }
 
 #citation:before {
@@ -35,7 +36,8 @@ body {
 #auteur {
 	font-size: 1.5em;
 	font-style: italic;
-    padding-left: 25px;
+    text-align: center;
+    font-size: 2em;
 }
 
 #nouveau {
