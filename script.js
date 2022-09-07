@@ -1,5 +1,5 @@
-// Tableau de citations
-let citations = [
+// Tableau de quote
+let quotesList = [
   [
     "La vie est un mystère qu'il faut vivre, et non un problème à résoudre.",
     "Gandhi",
@@ -71,12 +71,12 @@ let citations = [
   ],
 ];
 
-let citation = document.getElementById("citation");
-let auteur = document.getElementById("auteur");
-let btn = document.getElementById("nouveau");
+let quote = document.getElementById("quote");
+let author = document.getElementById("author");
+let btn = document.getElementById("new");
 
-let dernier = 0;
-let nombreAleatoire = 0;
+let lastQuote = 0;
+let randomNb = 0;
 
 function genererNombreEntier(max) {
   return Math.floor(Math.random() * Math.floor(max));
@@ -84,10 +84,10 @@ function genererNombreEntier(max) {
 
 btn.addEventListener("click", () => {
   do {
-    nombreAleatoire = genererNombreEntier(citations.length);
-  } while (nombreAleatoire == dernier);
+    randomNb = genererNombreEntier(quotesList.length);
+  } while (randomNb == lastQuote);
 
-  citation.innerHTML = citations[nombreAleatoire][0];
-  auteur.innerHTML = citations[nombreAleatoire][1];
-  dernier = nombreAleatoire;
+  quote.innerHTML = quotesList[randomNb][0];
+  author.innerHTML = quotesList[randomNb][1];
+  lastQuote = randomNb;
 });

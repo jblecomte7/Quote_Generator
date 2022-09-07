@@ -16,7 +16,7 @@ body {
     align-items: center;
 }
 
-#citation {
+#quote {
 	font-size: 2em;
 	font-family: "Satisfy", curve;
 	line-height: 1.3em;
@@ -25,22 +25,22 @@ body {
     text-align: center;
 }
 
-#citation:before {
+#quote:before {
 	content: open-quote;
 }
 
-#citation:after {
+#quote:after {
 	content: close-quote;
 }
 
-#auteur {
+#author {
 	font-size: 1.5em;
 	font-style: italic;
     text-align: center;
     font-size: 2em;
 }
 
-#nouveau {
+#new {
 	background: #ff9966;
 	background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
 	background: linear-gradient(to right, #ff5e62, #ff9966);
