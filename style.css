@@ -50,6 +50,8 @@ body {
     font-size: 1.5em;
     color: #fff;
     border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     padding: 15px 0;
 }
 
@@ -59,4 +61,5 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 10px;
 }
